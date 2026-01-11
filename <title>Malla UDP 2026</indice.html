@@ -1,0 +1,35 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla UDP 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Malla UDP 2026</h1>
+
+<div class="semester">
+  <h2>Primer semestre</h2>
+  <div class="grid">
+    <div class="course" data-id="mat1">Matemática I</div>
+    <div class="course" data-id="intro">Introducción a la Arquitectura</div>
+  </div>
+</div>
+
+<div class="semester">
+  <h2>Segundo semestre</h2>
+  <div class="grid">
+    <div class="course locked" data-id="mat2" data-prereq="mat1">
+      Matemática II
+    </div>
+    <div class="course locked" data-id="taller1" data-prereq="intro">
+      Taller I
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
