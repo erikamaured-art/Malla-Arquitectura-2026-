@@ -1,0 +1,42 @@
+style.css
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  padding: 20px;
+}
+
+.semester {
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.course {
+  padding: 15px;
+  background: #f4b6c2; /* rosado */
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.course.active {
+  background: #3498db; /* azul */
+  color: white;
+}
+
+.course.approved {
+  background: #8e44ad; /* morado */
+  color: white;
+  text-decoration: line-through;
+}
+
+.course.locked {
+  background: #cfcfcf;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
